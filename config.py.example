@@ -1,0 +1,11 @@
+# Rename config.py.example to config.py and fill values
+
+# For testing purposes
+skip_download = False
+
+# Overpass API ID of the area. Add 3600000000 to the OSM boundary relation ID.
+area_id = 3600049715
+overpass_query = f'[out:json][timeout:600];way["highway"~"(motorway|trunk|primary|secondary)"](area:{area_id});out meta;'
+
+# Copy this URL from Server Settings > Integrations > View Webhooks > New Webhook > (expand) > Copy Webhook URL
+webhook_url = "YOUR_WEBHOOK_URL_HERE"

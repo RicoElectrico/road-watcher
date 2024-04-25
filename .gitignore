@@ -1,0 +1,6 @@
+config.py
+*testdata*
+*result*.gz
+log.txt
+venv/
+__pycache__/
